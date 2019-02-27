@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing audio, video, and images</title>
+  </head>
+  <body>
+
+    <h1>Image Examples</h1>
+        <img srcset="images/andrew_400x400.jpg 400w,
+                     images/andrew_720x720.jpg 720w"
+              sizes="(max-width: 480px) 440px,
+                     800px"
+              src="images/andrew_720x720.jpg"
+              alt="This is a photo of Andrew Powell"
+              title="Andrew Powell">
+
+    <h1>An audio example</h1>
+    <figure>
+        <figcaption>An example of an embedded audio file</figcaption>
+        <audio controls src="audio/persona4.wav">your browser does not support
+          <code>audio</code>.</audio>
+    </figure>
+
+    <h1>A video example</h1>
+    <figure>
+      <figcaption>An example of embedded video</figcaption>
+      <video width=400 title="dead by daylight" controls src="video/trollin.mp4"
+        >Your browser does notsupport the <code>video</code> element.
+      </video>
+    </figure>
+
+    <h1>Youtube embedded video</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LU7iAgVE7Og"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+  </body>
+</html>
