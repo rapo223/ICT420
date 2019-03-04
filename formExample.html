@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+  </head>
+  <body>
+    <h1>Creating Forms</h1>
+
+    <h2>Basic Text Entry</h2>
+
+    <form action="" method="post">
+      <div class="subscribe">
+        <label for="name">Enter Your Name:</label>
+        <input type="text" name="name" id="name" value="" required>
+      </div>
+
+      <div class="subscribe">
+        <label for="email">Enter Your Email:</label>
+        <input type="text" name="email" id="email" value="" required>
+      </div>
+
+      <div class="subscribe">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    <h2>Create a button</h2>
+
+    <form action="" method="get">
+      <div>
+        <button type="button" name="button">Button Example</button>
+      </div>
+    </form>
+
+    <h2>Suggestion List</h2>
+
+    <form action="" method="get">
+      <div>
+        <label for="game">What is your favorite game?</label>
+        <input list="games" id="game" name="game">
+        <datalist id="games">
+          <option value="Dead by Daylight"></option>
+          <option value="Apex Legends"></option>
+          <option value="Detention"></option>
+          <option value="Red Dead Redemption 2"></option>
+          <option value="Subnautica"></option>
+        </datalist>
+      </div>
+    </form>
+
+    <h2>Create a pre-defined list of options</h2>
+
+    <form action="" method="get">
+      <div>
+      <label for="platform">What is your preferred gaming platform?</label>
+      <select id="platform" name="platforms">
+        <option value="">Select a platform</option>
+        <option value="PC">PC</option>
+        <option value="PS4">PS4</option>
+        <option value="Xbox One">Xbox One</option>
+        <option value="Switch">Switch</option>
+      </select>
+      </div>
+    </form>
+
+    <h2>Legend and Fieldset</h2>
+
+    <form action="" method="get">
+      <div>
+        <fieldset>
+          <legend>What ICT field do you plan to work in?</legend>
+
+          <input type="radio" name="security" id="security">
+          <label for="security">Security</label><br/>
+
+          <input type="radio" name="networking" id="networking">
+          <label for="networking">Networking</label><br/>
+
+          <input type="radio" name="system" id="system">
+          <label for="system">System Administration</label>
+
+        </fieldset>
+      </div>
+    </form>
+
+    <h2>Text Area</h2>
+
+    <form action="" method="post">
+      <label>This is a comment box</label><br/>
+      <textarea name="name" rows="8" cols="80"></textarea>
+    </form>
+
+
+
+  </body>
+</html>
